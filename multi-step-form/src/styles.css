@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e67e22;
+}
+
+.form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: unset;
+  background-color: unset;
+  border-color: unset;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2.2rem;
+}
+
+.btn {
+  letter-spacing: 1px;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+}
+
+.steps .step {
+  margin: 0.5rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ccc;
+}
+
+.steps .step a {
+  color: #e67e22;
+}
+
+.steps .step div:first-of-type {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 100%;
+  padding-top: 7%;
+}
+
+.steps .step :last-child {
+  margin-top: 3%;
+}
+
+.steps .step.active div:first-of-type {
+  background-color: #e67e22;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.steps .step.active div:last-of-type {
+  color: #e67e22;
+}
+
+.input-form {
+  width: 60%;
+  margin: 3rem auto;
+}
+
+.errorMsg {
+  max-width: 350px;
+  color: #f21e08;
+  padding: 2px 0;
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.login-error {
+  font-size: 1.1rem;
+}
+
+.successMsg {
+  color: #22ac11;
+}
+
+.loading {
+  color: #777;
+}
+
+.form-control.input-error {
+  border: 2px solid #f21e08;
+}
+
+.user-details {
+  color: #22ac11;
+  padding: 5px 0;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .input-form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .steps .step {
+    margin: 0.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .steps .step {
+    margin: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  .steps .step div:first-of-type {
+    padding-top: 9%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .steps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .steps .step {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
